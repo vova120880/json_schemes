@@ -1,0 +1,56 @@
+{
+  "$id": "https://github.com/vova120880/json_schemes/trunk.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "description": "ГТ в плате",
+  "properties": {
+    "index": {
+      "type": "integer",
+      "description": "индекс ГТ в плате"
+    },
+    "data": {
+      "type": "object",
+      "description": "описание ГТ в плате",
+      "properties": {
+        "TYPE": {
+          "type": "string",
+          "description": "Тип ГТ в плате",
+          "enum": [
+            "NATIVE",
+            "EDSS1",
+            "SS7",
+            "PCMTDM"
+          ]
+        },
+        "PORTS": {
+          "type": "array",
+          "description": "массив распределения портов",
+          "items": {
+            "type": "string",
+            "description": "тип порта",
+            "enum": [
+              "CTL",
+              "MP",
+              "AK",
+              "AL",
+              "SLS",
+              "DSS1",
+              "P209",
+              "P209B10K"
+            ]
+          }
+        }
+      },
+      "required": [
+        "TYPE",
+        "PORTS"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "index",
+    "data"
+  ],
+  "additionalProperties": false
+}
