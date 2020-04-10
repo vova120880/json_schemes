@@ -1,0 +1,32 @@
+{
+  "$id": "https://raw.githubusercontent.com/vova120880/json_schemes/master/cross.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "description": "кассета",
+  "properties": {
+    "CROSS": {
+      "type": "string",
+      "description": "тип кассеты",
+      "enum": [
+        "17R",
+        "18",
+        "19R",
+        "KRP",
+        "MCU"
+      ]
+    },
+    "BOARDS": {
+      "type": "array",
+      "description": "распределение плат в кассете",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/vova120880/json_schemes/master/board.schema.json",
+        "description": "плата"
+      }
+    }
+  },
+  "required": [
+    "CROSS",
+    "BOARDS"
+  ],
+  "additionalProperties": false
+}
