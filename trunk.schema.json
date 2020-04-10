@@ -1,5 +1,5 @@
 {
-  "$id": "https://github.com/vova120880/json_schemes/trunk.schema.json",
+  "$id": "https://raw.githubusercontent.com/vova120880/json_schemes/master/trunk.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "description": "ГТ в плате",
