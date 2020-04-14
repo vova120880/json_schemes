@@ -1,0 +1,32 @@
+{
+  "class": "config",
+  "data": {
+    "datatype": "/hw",
+    "data": {
+      "CCUUNITS": [
+        {
+          "index": "ccu",
+          "data": {
+            "CCU": {
+              "SM_SIZE": "256",
+              "MAIN": {
+                "CROSS": "17R",
+                "BOARDS": []
+              },
+              "MKU": {
+                "CROSS": "17R",
+                "BOARDS": []
+              },
+              "EXT": []
+            },
+            "PCM_PARAMS": [],
+            "DTMF": {
+              "DEFAULT": "true",
+              "EXCEPTION": []
+            }
+          }
+        }
+      ]
+    }
+  }
+}

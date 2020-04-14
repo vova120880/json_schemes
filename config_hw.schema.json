@@ -1,0 +1,56 @@
+{
+  "$id": "https://raw.githubusercontent.com/vova120880/json_schemes/master/config_hw.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "description": "ответ на запрос аппаратной конфигурации (запрос на запись)",
+  "properties": {
+    "class": {
+      "type": "string",
+      "enum": [
+        "config"
+      ],
+      "description": "класс получаемых данных"
+    },
+    "data": {
+      "type": "object",
+      "description": "данные для запроса",
+      "properties": {
+        "datatype": {
+          "type": "string",
+          "enum": [
+            "/hw"
+          ],
+          "description": "тип получаемых данных"
+        },
+        "data": {
+          "type": "object",
+          "description": "конфигурация",
+          "properties": {
+            "CCUUNITS": {
+              "type": "array",
+              "description": "массив областей действия",
+              "items": {
+                "$ref": "https://raw.githubusercontent.com/vova120880/json_schemes/master/ccuunit.schema.json",
+                "description": "параметры области действия"
+              }
+            }
+          },
+          "required": [
+            "CCUUNITS"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "datatype",
+        "data"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "class",
+    "data"
+  ],
+  "additionalProperties": false
+}
