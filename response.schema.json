@@ -1,0 +1,51 @@
+{
+  "$id": "https://raw.githubusercontent.com/vova120880/json_schemes/master/response.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "description": "ответ на запрос изменения конфигурации",
+  "properties": {
+    "class": {
+      "type": "string",
+      "enum": [
+        "ack"
+      ],
+      "description": "ключевое слово"
+    },
+    "data": {
+      "type": "object",
+      "description": "данные ответа на запрос",
+      "properties": {
+        "datatype": {
+          "type": "string",
+          "enum": [
+            "/hw"
+          ],
+          "description": "тип получаемых данных"
+        },
+        "result": {
+          "type": "integer",
+          "enum": [
+            0,
+            1
+          ],
+          "description": "результат (1 - запрос выполнен, 0 - ошибка)"
+        },
+        "comment": {
+          "type": "string",
+          "description": "описание ошибки"
+        }
+      },
+      "required": [
+        "datatype",
+        "result",
+        "comment"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "class",
+    "data"
+  ],
+  "additionalProperties": false
+}

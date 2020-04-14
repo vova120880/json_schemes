@@ -1,0 +1,45 @@
+{
+  "$id": "https://raw.githubusercontent.com/vova120880/json_schemes/master/request.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "description": "запрос конфигурации",
+  "properties": {
+    "class": {
+      "type": "string",
+      "enum": [
+        "config"
+      ],
+      "description": "класс получаемых данных"
+    },
+    "data": {
+      "type": "object",
+      "description": "данные для запроса",
+      "properties": {
+        "datatype": {
+          "type": "string",
+          "enum": [
+            "/hw"
+          ],
+          "description": "тип получаемых данных"
+        },
+        "operation": {
+          "type": "string",
+          "enum": [
+            "request"
+          ],
+          "description": "ключевое слово для запроса"
+        }
+      },
+      "required": [
+        "datatype",
+        "operation"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "class",
+    "data"
+  ],
+  "additionalProperties": false
+}
