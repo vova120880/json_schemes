@@ -1,0 +1,22 @@
+{
+  "index": "ccu1",
+  "data": {
+    "CCU": {
+      "SM_SIZE": "256",
+      "MKU": {
+        "CROSS": "17R",
+        "BOARDS": []
+      },
+      "MAIN": {
+        "CROSS": "17R",
+        "BOARDS": []
+      },
+      "EXT": []
+    },
+    "PCM_PARAMS": [],
+    "DTMF": {
+      "DEFAULT": "true",
+      "EXCEPTION": []
+    }
+  }
+}

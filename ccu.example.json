@@ -1,0 +1,45 @@
+{
+  "SM_SIZE": "256",
+  "MKU": {
+    "CROSS": "17R",
+    "BOARDS": []
+  },
+  "MAIN": {
+    "CROSS": "17R",
+    "BOARDS": [
+      {
+        "index": 2,
+        "data": {
+          "TYPE": "MMD",
+          "TRUNKS": [
+            {
+              "index": 0,
+              "data": {
+                "TYPE": "NATIVE",
+                "PORTS": [
+                  "CTL",
+                  "AK",
+                  "AK",
+                  "AK",
+                  "AK",
+                  "AK",
+                  "AK",
+                  "AK",
+                  "AK",
+                  "AK",
+                  "AK",
+                  "AK",
+                  "AK",
+                  "AK",
+                  "AK",
+                  "AK"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "EXT": []
+}

@@ -1,0 +1,37 @@
+{
+  "CROSS": "17R",
+  "BOARDS": [
+    {
+      "index": 2,
+      "data": {
+        "TYPE": "MMD",
+        "TRUNKS": [
+          {
+            "index": 0,
+            "data": {
+              "TYPE": "NATIVE",
+              "PORTS": [
+                "CTL",
+                "AK",
+                "AK",
+                "AK",
+                "AK",
+                "AK",
+                "AK",
+                "AK",
+                "AK",
+                "AK",
+                "AK",
+                "AK",
+                "AK",
+                "AK",
+                "AK",
+                "AK"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
