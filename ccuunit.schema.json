@@ -1,0 +1,54 @@
+{
+  "$id": "https://raw.githubusercontent.com/vova120880/json_schemes/master/ccuunit.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "description": "область действия",
+  "properties": {
+    "index": {
+      "type": "string",
+      "description": "имя области действия"
+    },
+    "data": {
+      "type": "object",
+      "description": "настройки для области действия",
+      "properties": {
+        "CCU": {
+          "$ref": "https://raw.githubusercontent.com/vova120880/json_schemes/master/ccu.schema.json",
+          "description": "коммутатор"
+        },
+        "PCM_PARAMS": {
+          "type": "array",
+          "description": "параметры pcm"
+        },
+        "DTMF": {
+          "type": "object",
+          "description": "параметры dtmf",
+          "properties": {
+            "DEFAULT": {
+              "type": "string"
+            },
+            "EXCEPTION": {
+              "type": "array"
+            }
+          },
+          "required": [
+            "DEFAULT",
+            "EXCEPTION"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "CCU",
+        "PCM_PARAMS",
+        "DTMF"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "index",
+    "data"
+  ],
+  "additionalProperties": false
+}
