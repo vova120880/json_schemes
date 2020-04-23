@@ -1,5 +1,5 @@
 {
-  "class": "ack",
+  "classtype": "ack",
   "data": {
     "datatype": "/hw",
     "result": 1,

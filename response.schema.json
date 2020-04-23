@@ -4,7 +4,7 @@
   "type": "object",
   "description": "ответ на запрос изменения конфигурации",
   "properties": {
-    "class": {
+    "classtype": {
       "type": "string",
       "enum": [
         "ack"
@@ -44,7 +44,7 @@
     }
   },
   "required": [
-    "class",
+    "classtype",
     "data"
   ],
   "additionalProperties": false

@@ -4,7 +4,7 @@
   "type": "object",
   "description": "запрос конфигурации",
   "properties": {
-    "class": {
+    "classtype": {
       "type": "string",
       "enum": [
         "config"
@@ -38,7 +38,7 @@
     }
   },
   "required": [
-    "class",
+    "classtype",
     "data"
   ],
   "additionalProperties": false
